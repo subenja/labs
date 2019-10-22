@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Lab 1 on October 21</title>
+    <script>
+        //Lab 1
+        function Lab1() {
+            let age = prompt('Please enter Age: ','');
+            
+            //1: assign the result to a variable 
+            let result=(age<4) ? 'Below': 'Over';
+            alert(result);
+
+            //2: no need to assign the result to a variable 
+            (age<4) ? alert('result2: Below') : alert('result2: Over');     
+        }
+        
+
+        //Lab 2
+        function Lab2() {
+            let login = prompt('Please enter your login: ','');
+            let status=(login==='Employee') ? 'Hello' :
+            (login==='Director') ? 'Greetings' :
+            (login==='') ? 'No login' :
+            '';
+            alert(status);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Lab if-else to ternary</h1>
+    <table>
+        <tr>
+            <td>
+                    <figure>
+                            <figcaption>Lab 1: change this if-else to ternary</figcaption>
+                            <pre>
+                                <code>
+        let result;
+        let age = 0;
+        if (age < 4) {
+        result = 'Below';
+        } else {
+        result = 'Over';
+        }  
+                                </code>
+                            </pre>
+                        </figure>
+            </td>
+            <td>
+                    <figure>
+                            <figcaption>My code</figcaption>
+                            <pre>
+                              <code>                  
+        let age = prompt('Please enter Age: ','');
+    
+        //1: assign the result to a variable 
+        let result=(age<4) ? 'Below': 'Over';
+        alert(result);
+
+        //2: no need to assign the result to a variable 
+        (age<4) ? alert('result2: Below') : alert('result2: Over');                  
+                              </code>
+                            </pre>
+                    </figure>    
+                    <button onclick="Lab1()">Click here to test Lab1</button><br>
+            </td>
+        </tr>
+        <tr>
+                <td>
+                        <figure>
+                                <figcaption>Lab 2</figcaption>
+                                <pre>
+                                  <code>
+        let login;
+        let status = login === 'Employee' ? ‘Hello’ :
+        if (login === 'Employee') {
+        status = 'Hello';
+        } else if (login === 'Director') {
+        status = 'Greetings';
+        } else if (login === '') {
+        status = 'No login';
+        } else {
+        status = '';
+        }
+                                  </code>
+                                </pre>
+                        </figure>
+                </td>
+                <td>
+
+                        <figure>
+                                <figcaption>My code</figcaption>
+                                <pre>
+                                  <code>
+        let login = prompt('Please enter your login: ','');
+        let status=(login==='Employee') ? 'Hello' :
+        (login==='Director') ? 'Greetings' :
+        (login==='') ? 'No login' :
+        '';
+        alert(status);
+                                  </code>
+                                </pre>
+                        </figure>        
+                    <button onclick="Lab2()">Click here to test Lab2</button>                    
+                </td>
+            </tr>        
+    </table>
+</body>
+</html>
